@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AlamofireImage (3.1.0):
+    - Alamofire (~> 4.0.1)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/NyxReloaded/Alamofire.git`, branch `fix/ios_8`)
+  - AlamofireImage (from `https://github.com/NyxReloaded/AlamofireImage.git`, branch `fix/ios_8`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: fix/ios_8
+    :git: https://github.com/NyxReloaded/Alamofire.git
+  AlamofireImage:
+    :branch: fix/ios_8
+    :git: https://github.com/NyxReloaded/AlamofireImage.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 6503bddefd2f7cb69b41974ca4b99b2d874a9c56
+    :git: https://github.com/NyxReloaded/Alamofire.git
+  AlamofireImage:
+    :commit: a717510266f252cec38d7744db3e93d5a7d3542d
+    :git: https://github.com/NyxReloaded/AlamofireImage.git
+
+SPEC CHECKSUMS:
+  Alamofire: 5459ad070d57f58fdb6686a45c1c76753dbdafc5
+  AlamofireImage: b42a261cbe5adfee1f396649bf0e1b0a135255a2
+
+PODFILE CHECKSUM: 0110c7aa37a941910a820f688d4cac6cb3c7e8f9
+
+COCOAPODS: 1.1.1

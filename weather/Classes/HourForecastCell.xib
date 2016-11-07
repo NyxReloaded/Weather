@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourForecastCell" id="wCC-SV-sRn" customClass="HourForecastCell" customModule="weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jz-bU-SNp" userLabel="Hour Label">
+                        <rect key="frame" x="22" y="2" width="16" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="32" placeholderIntrinsicHeight="32" image="10d" translatesAutoresizingMaskIntoConstraints="NO" id="pcn-5X-Zs4" userLabel="Icon">
+                        <rect key="frame" x="14" y="24" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="32" id="6UQ-m2-1zg"/>
+                            <constraint firstAttribute="width" secondItem="pcn-5X-Zs4" secondAttribute="height" multiplier="1:1" id="vvG-uq-pX9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M4-C2-IKf" userLabel="Temperature Label">
+                        <rect key="frame" x="26" y="62" width="9" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhI-F3-zVb" userLabel="Unit Label">
+                        <rect key="frame" x="35" y="62" width="6" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8jz-bU-SNp" firstAttribute="top" secondItem="wCC-SV-sRn" secondAttribute="topMargin" id="0vb-is-taX"/>
+                <constraint firstItem="pcn-5X-Zs4" firstAttribute="centerY" secondItem="wCC-SV-sRn" secondAttribute="centerY" id="DXP-Nv-9l7"/>
+                <constraint firstItem="pcn-5X-Zs4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8jz-bU-SNp" secondAttribute="bottom" constant="2" id="EAb-QN-MgC"/>
+                <constraint firstItem="DhI-F3-zVb" firstAttribute="leading" secondItem="4M4-C2-IKf" secondAttribute="trailing" id="LiX-ia-hof"/>
+                <constraint firstItem="8jz-bU-SNp" firstAttribute="centerX" secondItem="wCC-SV-sRn" secondAttribute="centerX" id="bnv-qB-OBY"/>
+                <constraint firstItem="DhI-F3-zVb" firstAttribute="top" secondItem="4M4-C2-IKf" secondAttribute="top" id="fOC-Tn-a1X"/>
+                <constraint firstAttribute="bottomMargin" secondItem="4M4-C2-IKf" secondAttribute="bottom" id="lau-5x-PfA"/>
+                <constraint firstItem="4M4-C2-IKf" firstAttribute="centerX" secondItem="wCC-SV-sRn" secondAttribute="centerX" id="paV-xx-58N"/>
+                <constraint firstItem="4M4-C2-IKf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pcn-5X-Zs4" secondAttribute="bottom" constant="2" id="qJA-Ky-s13"/>
+                <constraint firstItem="pcn-5X-Zs4" firstAttribute="centerX" secondItem="wCC-SV-sRn" secondAttribute="centerX" id="vKe-ti-FPA"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="2" left="0.0" bottom="2" right="0.0"/>
+            <connections>
+                <outlet property="hourLabel" destination="8jz-bU-SNp" id="cat-6U-G27"/>
+                <outlet property="temperatureLabel" destination="4M4-C2-IKf" id="IZZ-tX-beJ"/>
+                <outlet property="weatherIconImageView" destination="pcn-5X-Zs4" id="aJF-0g-0GA"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="10d" width="50" height="50"/>
+    </resources>
+</document>

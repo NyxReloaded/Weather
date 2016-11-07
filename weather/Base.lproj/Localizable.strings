@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  weather
+
+  Created by Mickael Laloum on 05/11/2016.
+  Copyright © 2016 Mickael Laloum. All rights reserved.
+*/
+
+"main.humidity" = "Humidité";
+"main.pressure" = "Pression";
+"wind.speed" = "Vent";
+"wind.degree" = "Ressentie";
+"rain.volume" = "Précipitations";
+"cloud.cloudiness" = "Risque de pluie";
+"rain.volume" = "Précipitations";
+"snow.volume" = "Enneigement";
